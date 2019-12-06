@@ -1,2 +1,2 @@
 # React-Learn
-Scrimba React bootcamp notes and snippits for reference
+Scrimba React bootcamp notes and snippets for reference
