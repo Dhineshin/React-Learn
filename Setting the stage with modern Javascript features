@@ -1,0 +1,35 @@
+Functional Component can be written using traditional "function" keyword or use Arrow functions
+
+Classic Way:                                            
+function App() {
+    return (
+        <div>
+            <NewJSFeatures />
+        </div>
+    )
+ }
+ 
+Modern Way: 
+const App = () => (
+    <div>
+        <NewJSFeatures />
+    </div>
+)    
+
+Using Arrow function we could avoid binding the function in constructor() since Arrow functions are using lexical scoping
+        — ‘this’ refers to it’s current surrounding scope and no further. Thus the inner function knew to bind to the inner function only,
+            and not to the object’s method or the object itself.
+If only Arrow functions are used inside a class then there is no need to bind the function inside a constructor. Class allows class
+variables and hence we can move this.setState as class variables and remove the necessity of a constructor.
+
+Object Destructuring:
+
+state = {
+        count: 0,
+        greeting: "Hi",
+        age: 42
+    }
+    
+const {count: number, greeting, age} = this.state
+
+Now count is renamed as to number varibale (alias)
