@@ -1,0 +1,11 @@
+React expects functional components to return as single unit. This creates pyramid <div> tags incase of nested components.
+
+To flatten it use <React.Fragment> </React.Fragment> or to use it simple <> </>
+
+<>
+  <h1> hello </h1>
+  <ChildComponent />
+</>
+
+Warning: When you use React.Fragment it deflattens all Div's as one single <Div> </Div>. This may cause bigger issues in CSS styling
+if childcomponent and grandchildcomponent needs to have different styles.
