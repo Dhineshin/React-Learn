@@ -1,0 +1,6 @@
+A common mistake when starting to use modules is to forget curly braces at all. 
+So, remember, import needs curly braces for named exports and doesn’t need them for the default one.
+
+Named export			Default export
+export class User {...}		export default class User {...}
+import {User} from ...		import User from ...
