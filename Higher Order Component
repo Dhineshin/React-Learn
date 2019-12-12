@@ -1,0 +1,4 @@
+We can use props not passed from UI Render logic but using HOCs
+Because Higher Order Cmponent can add props to the calling component and that can be used in the calling component itself as if
+that props are coming from UI render screen
+
